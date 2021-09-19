@@ -1,0 +1,10 @@
+LDR R1, [R2]
+ADR R3, TBL
+LDR PC, [R3,R1, LSL #2]
+RES STR R0, [R2,#4]
+C1 MOV R0, #70 ;’F’
+B RES
+C2 MOV R0, #68 ;’D’
+B RES
+C3 MOV R0, #67 ;’C’
+B RES
